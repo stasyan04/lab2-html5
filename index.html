@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Таблиця, Лабораторна робота, HTML, CSS">
+    <meta name="description" content="Лабораторна робота №2 зі створення таблиці в HTML">
+    <title>Стасенко С. С. Група ІМ-22. Лабораторна 2. Номер варіанта 77 та 7.</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        .first-row {
+            background-color: #778f8f; 
+            color: #ffffff; 
+        }
+
+        .first-row:hover {
+            background-color: #f5f577;
+            color: #000000; 
+        }
+
+        .second-row {
+            background-color: #f5f577; 
+            color: #000000; 
+        }
+
+        .second-row:hover {
+            background-color: #778f8f; 
+            color: #ffffff; 
+        }
+
+        td {
+            border: 1px solid black;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr class="first-row">
+            <td rowspan="2" colspan="2">Стасенко</td>
+            <td>Станіслав</td>
+            <td>Сергійович</td>
+        </tr>
+        
+        <tr class="second-row">
+            <td>ІМ-22 Лаб 2</td>
+            <td>Варіант 7</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="container position-container">
+        <div class="circle point-top"></div>
+        <div class="circle point-right"></div>
+        <div class="circle point-bottom"></div>
+        <div class="circle point-left"></div>
+        <div class="line vertical-line"></div>
+        <div class="line horizontal-line"></div>
+    </div>
+    
+    <div class="container transform-container">
+        <div class="circle transform-point-top"></div>
+        <div class="circle transform-point-right"></div>
+        <div class="circle transform-point-bottom"></div>
+        <div class="circle transform-point-left"></div>
+        <div class="line transform-vertical-line"></div>
+        <div class="line transform-horizontal-line"></div>
+    </div>
+</body>
+</html>
